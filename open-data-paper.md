@@ -1,6 +1,12 @@
-# Challenges facing Open Data and possible solutions/recommendations for addressing these challenges
-
-Arguments in favour of Open Data in research are becoming overwhelming. There are calls a national [@RCKUOpen] and international levels [@Moedas2015, @RSOpen]. Here I will set out a working definition of Open Data and briefly discuss the key challenges preventing Open Data becoming standard practice. I will attempt to draw some general solutions from field specific examples. 
+---
+title: A Pandoc Markdown Article Starter
+author:
+- name: Ian Mulvany
+  affiliation: eLife Sciences, Sage
+  email: ian@mulvany.net
+date: January 2014
+abstract: Arguments in favour of Open Data in research are becoming overwhelming. There are calls a national [@RCKUOpen] and international levels [@Moedas2015, @RSOpen]. Here I will set out a working definition of Open Data and briefly discuss the key challenges preventing Open Data becoming standard practice. I will attempt to draw some general solutions from field specific examples. 
+---
 
 ## Open Data is ... 
 Open Data is Findable, Accessible, Interoperable and Reusable [@Wilkinson2016]. Making data available is key to support reproducibility, but by far the greatest benefit comes when data can be built upon, and in so doing can truly assist with the advancement of knowledge. In addition, one re-use of a data set effectively halves the cost per use of that data. 
