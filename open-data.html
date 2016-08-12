@@ -27,12 +27,17 @@
 
 
 
-<h2 id="open-data-is">Open Data is …</h2>
+<h1 id="open-data-is">Open Data is …</h1>
 <p>Open Data is Findable, Accessible, Interoperable and Reusable <span class="citation">(Wilkinson et al. 2016)</span>. Making data available is key to support reproducibility, but by far the greatest benefit comes when data can be built upon, and in so doing can truly assist with the advancement of knowledge. In addition, one re-use of a data set effectively halves the cost per use of that data.</p>
-<h2 id="how-should-we-speak-of-the-challenges-for-open-data">How should we speak of the challenges for Open Data?</h2>
+<h1 id="how-should-we-speak-of-the-challenges-for-open-data">How should we speak of the challenges for Open Data?</h1>
 <p><span class="citation">(Goodman et al. 2014)</span> lay out ten rules for the care and feeding of scientific data. Were all of these rules to be adhered to by all researchers, we would have as good an Open Data ecosystem as we could wish for. In this light then, let us look at what might be preventing us from adopting the key practices from these rules!</p>
-<h2 id="rule-0.-share-your-data">Rule 0. Share your data</h2>
-<p>This is an almost unwritten rule from this paper, and the paper starts from the position that a given researcher wants to share their data. The general lack of willingness of researchers to share their data is the greatest of the challenges, and I will return to this point at the end of this paper, to consider it in light of the other challenges discussed.</p>
+<pre><code>The 10 tips can be grouped by broader topics, and I think there may be a lot of value in
+doing that.</code></pre>
+<h1 id="sharing-data-and-why-we-dont.">Sharing data, and why we don’t.</h1>
+<p>This is an almost unwritten rule from <span class="citation">(Goodman et al. 2014)</span> and that is to share your data. The general lack of willingness of researchers to do this is the greatest challenge. I will return to this point at the end of the paper, and consider it in the light of the other challenges discussed.</p>
+<h1 id="challenge-competence-in-working-with-data">Challenge: competence in working with data</h1>
+<pre><code>familiarity with tools and practices removes the fear of using those tools, and participating
+in those practices. Good data management and husbandry becomes easier when we have a research community equipped to do a good job of data sharing.</code></pre>
 <h2 id="rule-1.-love-your-data-and-help-others-love-it-too">Rule 1. Love Your Data, and Help Others Love It, Too</h2>
 <p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542#s2">This rule</a> talks about the need to create data that is well described and well documented. Where the data is available, it’s usefulness is strongly hindered if no one other than the data creator knows how to use that data.</p>
 <p>A number of potential challenges stand in the way of making this happen. Keeping track of what the researcher did can be complicated. Some data is hyper-hetrogeneous, bringing together multi-varied data across many dimensions, in such a way that only the researcher who created that data set understands how to unpick it.</p>
@@ -43,6 +48,18 @@
 <li>Some data practices are specific, but the core practices are generic, and in the move from paper lab notebooks to digital data, we can take lessons from the software world</li>
 <li>ensure there is training in data management, support initiatives like Data Carpentry, Software Carpentry, point researchers towards online learning resources (e.g. data science courses), work on supporting a scientific data science online resource</li>
 </ul>
+<h2 id="rule-3.-conduct-science-with-a-particular-level-of-reuse-in-mind">Rule 3. Conduct Science with a Particular Level of Reuse in Mind</h2>
+<p>The <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542#s4">thrid rule</a> researchers sometimes create entirely new data formats that are only of particular use in certain contexts</p>
+<p>How do we deal with very large data? <span class="citation">(CERN 2009)</span></p>
+<h3 id="false-privacy-fears">False privacy fears</h3>
+<p>Privacy concerns are real, but often the conversation gets dominated by this concern, where most data is not affected by this conversation.</p>
+<h3 id="new-tools-create-new-data-formats">New tools create new data formats</h3>
+<p>Especially in microscopy (see OMERO as a solution to this)</p>
+<h2 id="rule-4.-publish-workflow-as-context">Rule 4. Publish Workflow as Context</h2>
+<h3 id="heterogeneous-data">Heterogeneous data</h3>
+<p>A research question may need to pull together data from very different sources, and perhaps only the researcher understands how to combine the data</p>
+<h1 id="challenge-infrastructure-for-openness-geoffrey2015">Challenge: Infrastructure for openness <span class="citation">(Geoffrey, Jennifer, and Cameron 2015)</span></h1>
+<pre><code>intent for data sharing must be matched by infrastructural support</code></pre>
 <h2 id="rule-2.-share-your-data-online-with-a-permanent-identifier">Rule 2. Share your data online with a Permanent identifier</h2>
 <p>The data under the desk phenomenon is well known.</p>
 <ul>
@@ -60,32 +77,34 @@
 </li>
 <li>Scientific data repository list</li>
 </ul>
-<h2 id="rule-3.-conduct-science-with-a-particular-level-of-reuse-in-mind">Rule 3. Conduct Science with a Particular Level of Reuse in Mind</h2>
-<p>The <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542#s4">thrid rule</a> researchers sometimes create entirely new data formats that are only of particular use in certain contexts</p>
-<p>How do we deal with very large data? <span class="citation">(CERN 2009)</span></p>
-<h2 id="rule-8-foster-and-use-data-repositories">Rule 8 Foster and use data repositories</h2>
+<h3 id="data-owned-by-corporations">Data owned by corporations</h3>
+<p>Large data at google and Facebook scale are owned by companies like google and Facebook. Work that builds on this data cannot be reproduced (this is an edge case). s</p>
+<h2 id="rule-6.-publish-your-code-even-the-small-bits">Rule 6. Publish Your Code (Even the small bits)</h2>
+<h2 id="rule-8.-foster-and-use-data-repositories">Rule 8. Foster and use data repositories</h2>
 <ul>
 <li>This also helps with data formats, as it requires standarsiation of your data</li>
 </ul>
-<h1 id="introduction">Introduction</h1>
-<h2 id="other-kinds-of-problems-we-could-talk-about">Other kinds of problems we could talk about</h2>
-<h3 id="large-data">Large data</h3>
-<p>Data is sometimes too big to share or to process, see CERN.</p>
-<h3 id="heterogeneous-data">Heterogeneous data</h3>
-<p>A research question may need to pull together data from very different sources, and perhaps only the researcher understands how to combine the data</p>
-<h3 id="data-owned-by-corporations">Data owned by corporations</h3>
-<p>Large data at google and Facebook scale are owned by companies like google and Facebook. Work that builds on this data cannot be reproduced (this is an edge case).</p>
-<h3 id="false-privacy-fears">False privacy fears</h3>
-<p>Privacy concerns are real, but often the conversation gets dominated by this concern, where most data is not affected by this conversation.</p>
-<h3 id="new-tools-create-new-data-formats">New tools create new data formats</h3>
-<p>Especially in microscopy (see OMERO as a solution to this)</p>
-<h3 id="lack-of-training">Lack of training</h3>
-<p>(see data carpentry as a solution to this)</p>
 <h3 id="lack-of-infrastructure">Lack of infrastructure</h3>
 <p>needs to be dealt with on a subject by subject basis, also libraries may play a role in the future</p>
+<h1 id="challenge-the-incentives-for-openness">Challenge: The incentives for openness</h1>
+<pre><code>without credit there will be no shift in culture</code></pre>
+<h2 id="rule-5.-link-your-data-to-your-publications-as-often-as-possible">Rule 5. Link Your Data to Your Publications as Often as Possible</h2>
+<h2 id="rule-7.-state-how-you-want-to-get-credit">Rule 7. State How You Want to Get Credit</h2>
+<h2 id="rule-9.-reward-colleagues-who-share-their-data-properly">Rule 9. Reward Colleagues Who Share Their Data Properly</h2>
 <h3 id="lack-of-credit">Lack of credit</h3>
 <p>This is the biggest problem, researcher led grants, and personal impact statements can help</p>
-<h3 id="you-also-need-to-think-about-code-as-well-as-data">You also need to think about code as well as data</h3>
+<h1 id="challenge-the-culture-of-openness">Challenge: The culture of Openness</h1>
+<pre><code>If we achieve a cultural shift within a field, this question does not even exist,
+the hardest, and most influential, changes are cultural ones</code></pre>
+<h3 id="rule-10.-be-a-booster-for-data-science">Rule 10. Be a Booster for Data Science</h3>
+<h2 id="some-solutions">Some Solutions</h2>
+<ul>
+<li>encourage high profile journals to advocate for open data</li>
+<li>require data management plans</li>
+<li>celebrate those who share well, create social pressure for data sharing</li>
+</ul>
+<h1 id="summary-of-solutions">Summary of solutions</h1>
+<pre><code>to be completed </code></pre>
 <hr />
 <div id="refs" class="references">
 <div id="ref-RSOpen">
@@ -93,6 +112,9 @@
 </div>
 <div id="ref-CERN-DATA">
 <p>CERN. 2009. “Data Preservation in High-Energy Physics,” no. May: 1–18.</p>
+</div>
+<div id="ref-Geoffrey2015">
+<p>Geoffrey, Bilder, Lin Jennifer, and Neylon Cameron. 2015. “Principles for Open Scholarly Infrastructures-v1.”</p>
 </div>
 <div id="ref-Goodman2014">
 <p>Goodman, Alyssa, Alberto Pepe, Alexander W. Blocker, Christine L. Borgman, Kyle Cranmer, Merce Crosas, Rosanne Di Stefano, et al. 2014. “Ten Simple Rules for the Care and Feeding of Scientific Data.” Edited by Philip E. Bourne. <em>PLoS Computational Biology</em> 10 (4). Public Library of Science: e1003542. doi:<a href="https://doi.org/10.1371/journal.pcbi.1003542">10.1371/journal.pcbi.1003542</a>.</p>
