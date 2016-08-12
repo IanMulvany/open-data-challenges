@@ -1,45 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Open Data, Challenges towards implementation, and possible solutions.</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="buttondown.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="buttondown.css">
 </head>
 <body>
-<div id="header">
-<h1 class="title">true</h1>
-</div>
-<div id="TOC">
-<ul>
-<li><a href="#abstract">Abstract</a><ul>
-<li><a href="#open-data-is">Open Data is …</a></li>
-<li><a href="#how-should-we-speak-of-the-challenges-for-open-data">How should we speak of the challenges for Open Data?</a></li>
-<li><a href="#rule-0.-share-your-data">Rule 0. Share your data</a></li>
-<li><a href="#rule-1.-love-your-data-and-help-others-love-it-too">Rule 1. Love Your Data, and Help Others Love It, Too</a></li>
-<li><a href="#rule-2.-share-your-data-online-with-a-permanent-identifier">Rule 2. Share your data online with a Permanent identifier</a></li>
-<li><a href="#rule-3.-conduct-science-with-a-particular-level-of-reuse-in-mind">Rule 3. Conduct Science with a Particular Level of Reuse in Mind</a></li>
-<li><a href="#rule-8-foster-and-use-data-repositories">Rule 8 Foster and use data repositories</a></li>
-</ul></li>
-<li><a href="#introduction">Introduction</a><ul>
-<li><a href="#other-kinds-of-problems-we-could-talk-about">Other kinds of problems we could talk about</a><ul>
-<li><a href="#large-data">Large data</a></li>
-<li><a href="#heterogeneous-data">Heterogeneous data</a></li>
-<li><a href="#data-owned-by-corporations">Data owned by corporations</a></li>
-<li><a href="#false-privacy-fears">False privacy fears</a></li>
-<li><a href="#new-tools-create-new-data-formats">New tools create new data formats</a></li>
-<li><a href="#lack-of-training">Lack of training</a></li>
-<li><a href="#lack-of-infrastructure">Lack of infrastructure</a></li>
-<li><a href="#lack-of-credit">Lack of credit</a></li>
-<li><a href="#you-also-need-to-think-about-code-as-well-as-data">You also need to think about code as well as data</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-<h1 id="abstract">Abstract</h1>
-<p>Arguments in favour of Open Data in research are becoming overwhelming. There are calls a national <span class="citation">(RCUK 2015)</span> and international levels <span class="citation">(Moedas 2015, <span class="citation">Boulton et al. (2012)</span>)</span>. Here I will set out a working definition of Open Data and briefly discuss the key challenges preventing Open Data becoming standard practice. I will attempt to draw some general solutions from field specific examples.</p>
+<header>
+<h3 class="date">January 2014</h3>
+
+<h1 class="title">Open Data, Challenges towards implementation, and possible solutions.</h1>
+
+
+<h2 class="author">Ian Mulvany</h2>
+<p class="affilation"><em>eLife Sciences, Sage</em></p>
+
+</header>
+
+
+<p class="small"><strong>Abstract: </strong><em>Arguments in favour of Open Data in research are becoming overwhelming. There are calls a national <span class="citation">(RCUK 2015)</span> and international levels <span class="citation">(Moedas 2015, <span class="citation">Boulton et al. (2012)</span>)</span>. Here I will set out a working definition of Open Data and briefly discuss the key challenges preventing Open Data becoming standard practice. I will attempt to draw some general solutions from field specific examples.</em></p>
+
+
+
 <h2 id="open-data-is">Open Data is …</h2>
 <p>Open Data is Findable, Accessible, Interoperable and Reusable <span class="citation">(Wilkinson et al. 2016)</span>. Making data available is key to support reproducibility, but by far the greatest benefit comes when data can be built upon, and in so doing can truly assist with the advancement of knowledge. In addition, one re-use of a data set effectively halves the cost per use of that data.</p>
 <h2 id="how-should-we-speak-of-the-challenges-for-open-data">How should we speak of the challenges for Open Data?</h2>
@@ -59,15 +46,18 @@
 <h2 id="rule-2.-share-your-data-online-with-a-permanent-identifier">Rule 2. Share your data online with a Permanent identifier</h2>
 <p>The data under the desk phenomenon is well known.</p>
 <ul>
-<li>Big data has a home, Astronomy, Particle Physics, Genomics<br /></li>
-<li>Highly specific data has a home<br /></li>
+<li>Big data has a home, Astronomy, Particle Physics, Genomics<br />
+</li>
+<li>Highly specific data has a home<br />
+</li>
 <li>Hetrogenous “data under the desk” data have no natural home, but there are not options – Figshare, Zenodo, DataDryad, Github
 <ul>
 <li>Challenge here is in making researchers aware of the existence of these resources, and encouraging them to use them.</li>
 </ul></li>
 <li>The greatest challenge is in large data with no natural home (large scale social science data), and data coming from fields whose technical capability is outstripping the level of experience of those fields for dealing with that data. Currently this is an acute problem in microscopy, and is becoming an increasing problem for conectomics <span class="citation">(Lichtman, Pfister, and Shavit 2014)</span>.</li>
 <li><a href="http://www.re3data.org">Registry of Research Data Repositories</a> lists over 1500 research data repositories. The journal Scientific Data also maintains a more <a href="http://www.nature.com/sdata/policies/repositories">curated list</a>.</li>
-<li>example subject specific repositories<br /></li>
+<li>example subject specific repositories<br />
+</li>
 <li>Scientific data repository list</li>
 </ul>
 <h2 id="rule-3.-conduct-science-with-a-particular-level-of-reuse-in-mind">Rule 3. Conduct Science with a Particular Level of Reuse in Mind</h2>
@@ -97,14 +87,28 @@
 <p>This is the biggest problem, researcher led grants, and personal impact statements can help</p>
 <h3 id="you-also-need-to-think-about-code-as-well-as-data">You also need to think about code as well as data</h3>
 <hr />
-<div class="references">
-<p>Boulton, Geoffrey, Philip Campbell, Brian Collins, Peter Elias, Wendy Hall, Laurie Graeme, Onora O’Neill, et al. 2012. <em>Science as an Open Enterprise</em>. June. <a href="http://royalsociety.org/uploadedFiles/Royal{\_}Society{\_}Content/policy/projects/sape/2012-06-20-SAOE.pdf">http://royalsociety.org/uploadedFiles/Royal{\_}Society{\_}Content/policy/projects/sape/2012-06-20-SAOE.pdf</a>.</p>
+<div id="refs" class="references">
+<div id="ref-RSOpen">
+<p>Boulton, Geoffrey, Philip Campbell, Brian Collins, Peter Elias, Wendy Hall, Laurie Graeme, Onora O’Neill, et al. 2012. <em>Science as an open enterprise</em>. June. <a href="http://royalsociety.org/uploadedFiles/Royal{\_}Society{\_}Content/policy/projects/sape/2012-06-20-SAOE.pdf" class="uri">http://royalsociety.org/uploadedFiles/Royal{\_}Society{\_}Content/policy/projects/sape/2012-06-20-SAOE.pdf</a>.</p>
+</div>
+<div id="ref-CERN-DATA">
 <p>CERN. 2009. “Data Preservation in High-Energy Physics,” no. May: 1–18.</p>
-<p>Goodman, Alyssa, Alberto Pepe, Alexander W. Blocker, Christine L. Borgman, Kyle Cranmer, Merce Crosas, Rosanne <span>Di Stefano</span>, et al. 2014. “Ten Simple Rules for the Care and Feeding of Scientific Data.” Edited by Philip E. Bourne. <em>PLoS Computational Biology</em> 10 (4). Public Library of Science: e1003542. doi:<a href="http://dx.doi.org/10.1371/journal.pcbi.1003542">10.1371/journal.pcbi.1003542</a>. <a href="http://dx.plos.org/10.1371/journal.pcbi.1003542">http://dx.plos.org/10.1371/journal.pcbi.1003542</a>.</p>
-<p>Lichtman, Jeff W, Hanspeter Pfister, and Nir Shavit. 2014. “The Big Data Challenges of Connectomics.” <em>Nature Neuroscience</em> 17 (11). NIH Public Access: 1448–54. doi:<a href="http://dx.doi.org/10.1038/nn.3837">10.1038/nn.3837</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25349911 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4412267">http://www.ncbi.nlm.nih.gov/pubmed/25349911 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC4412267</a>.</p>
-<p>Moedas, Carlos. 2015. <em>Open Innovation, Open Science, Open to the World</em>. doi:<a href="http://dx.doi.org/10.2777/061652">10.2777/061652</a>. <a href="http://europa.eu/rapid/press-release{\_}SPEECH-15-5243{\_}en.htm">http://europa.eu/rapid/press-release{\_}SPEECH-15-5243{\_}en.htm</a>.</p>
+</div>
+<div id="ref-Goodman2014">
+<p>Goodman, Alyssa, Alberto Pepe, Alexander W. Blocker, Christine L. Borgman, Kyle Cranmer, Merce Crosas, Rosanne Di Stefano, et al. 2014. “Ten Simple Rules for the Care and Feeding of Scientific Data.” Edited by Philip E. Bourne. <em>PLoS Computational Biology</em> 10 (4). Public Library of Science: e1003542. doi:<a href="https://doi.org/10.1371/journal.pcbi.1003542">10.1371/journal.pcbi.1003542</a>.</p>
+</div>
+<div id="ref-Lichtman2014">
+<p>Lichtman, Jeff W, Hanspeter Pfister, and Nir Shavit. 2014. “The big data challenges of connectomics.” <em>Nature Neuroscience</em> 17 (11). NIH Public Access: 1448–54. doi:<a href="https://doi.org/10.1038/nn.3837">10.1038/nn.3837</a>.</p>
+</div>
+<div id="ref-Moedas2015">
+<p>Moedas, Carlos. 2015. <em>Open Innovation, Open Science, Open to the World</em>. doi:<a href="https://doi.org/10.2777/061652">10.2777/061652</a>.</p>
+</div>
+<div id="ref-RCKUOpen">
 <p>RCUK. 2015. “Concordat On Open Research Data - Version 10,” no. July.</p>
-<p>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” <em>Scientific Data</em> 3 (March). Nature Publishing Group: 160018. doi:<a href="http://dx.doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>. <a href="http://www.nature.com/articles/sdata201618">http://www.nature.com/articles/sdata201618</a>.</p>
+</div>
+<div id="ref-Wilkinson2016">
+<p>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for scientific data management and stewardship.” <em>Scientific Data</em> 3 (March). Nature Publishing Group: 160018. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.</p>
+</div>
 </div>
 </body>
 </html>
