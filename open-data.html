@@ -23,44 +23,63 @@
 </header>
 
 
-<p class="small"><strong>Abstract: </strong><em>Arguments in favour of Open Data in research are becoming overwhelming. There are calls a national <span class="citation">(RCUK 2015)</span> and international levels <span class="citation">(Moedas 2015, <span class="citation">Boulton et al. (2012)</span>)</span>. Here I will set out a working definition of Open Data and briefly discuss the key challenges preventing Open Data becoming standard practice. I will attempt to draw some general solutions from field specific examples.</em></p>
+<p class="small"><strong>Abstract: </strong><em>Calls in favour of Open Data in research are becoming overwhelming. They are at national <span class="citation">(RCUK 2015)</span> and international levels <span class="citation">(Moedas 2015, <span class="citation">Boulton et al. (2012)</span>)</span>. I will set out a working definition of Open Data and will discuss the key challenges preventing publication of Open Data becoming standard practice. I will attempt to draw some general solutions to those challenges from field specific examples.</em></p>
 
 
 
 <h1 id="open-data-is">Open Data is …</h1>
-<p>Open Data is Findable, Accessible, Interoperable and Reusable <span class="citation">(Wilkinson et al. 2016)</span>. Making data available is key to support reproducibility, but by far the greatest benefit comes when data can be built upon, and in so doing can truly assist with the advancement of knowledge. In addition, one re-use of a data set effectively halves the cost per use of that data.</p>
+<p>Open Data is Findable, Accessible, Interoperable and Reusable <span class="citation">(Wilkinson et al. 2016)</span>. Making data available is key to support reproducibility, but by far the greatest benefit comes when data can be built upon, and in so doing can truly assist with the advancement of knowledge. In addition, one re-use of a data set effectively doubles the utility of that dataset.</p>
 <h1 id="how-should-we-speak-of-the-challenges-for-open-data">How should we speak of the challenges for Open Data?</h1>
-<p><span class="citation">(Goodman et al. 2014)</span> lay out ten rules for the care and feeding of scientific data. Were all of these rules to be adhered to by all researchers, we would have as good an Open Data ecosystem as we could wish for. In this light then, let us look at what might be preventing us from adopting the key practices from these rules!</p>
-<pre><code>The 10 tips can be grouped by broader topics, and I think there may be a lot of value in
-doing that.</code></pre>
-<h1 id="sharing-data-and-why-we-dont.">Sharing data, and why we don’t.</h1>
-<p>This is an almost unwritten rule from <span class="citation">(Goodman et al. 2014)</span> and that is to share your data. The general lack of willingness of researchers to do this is the greatest challenge. I will return to this point at the end of the paper, and consider it in the light of the other challenges discussed.</p>
-<h1 id="challenge-competence-in-working-with-data">Challenge: competence in working with data</h1>
-<pre><code>familiarity with tools and practices removes the fear of using those tools, and participating
-in those practices. Good data management and husbandry becomes easier when we have a research community equipped to do a good job of data sharing.</code></pre>
-<h2 id="rule-1.-love-your-data-and-help-others-love-it-too">Rule 1. Love Your Data, and Help Others Love It, Too</h2>
-<p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542#s2">This rule</a> talks about the need to create data that is well described and well documented. Where the data is available, it’s usefulness is strongly hindered if no one other than the data creator knows how to use that data.</p>
-<p>A number of potential challenges stand in the way of making this happen. Keeping track of what the researcher did can be complicated. Some data is hyper-hetrogeneous, bringing together multi-varied data across many dimensions, in such a way that only the researcher who created that data set understands how to unpick it.</p>
+<p><span class="citation">(Goodman et al. 2014)</span> lay out ten rules for the care and feeding of scientific data. Were all of these rules to be adhered to by all researchers, we would have as good an Open Data ecosystem as we could wish for. Let us look at what might be preventing us from adopting the key practices from these rules! To streamline the discussion I have grouped the ten rules into three core challenges.</p>
+<h1 id="core-challenge-one-competence-in-working-with-data">Core Challenge One: competence in working with data</h1>
+<p>This challenge is addressed by rules one, three and four:</p>
 <ul>
-<li>use field specific standards where they exist</li>
-<li>where new formats are created, make them interoperable - OpenOMERO</li>
-<li>work on standardisation bodies - See W3C open Annotation group as a good example of this for the humanities</li>
-<li>Some data practices are specific, but the core practices are generic, and in the move from paper lab notebooks to digital data, we can take lessons from the software world</li>
-<li>ensure there is training in data management, support initiatives like Data Carpentry, Software Carpentry, point researchers towards online learning resources (e.g. data science courses), work on supporting a scientific data science online resource</li>
+<li>Rule 1. Love Your Data, and Help Others Love It, Too</li>
+<li>Rule 3. Conduct Science with a Particular Level of Reuse in Mind<br />
+</li>
+<li>Rule 4. Publish Workflow as Context</li>
 </ul>
-<h2 id="rule-3.-conduct-science-with-a-particular-level-of-reuse-in-mind">Rule 3. Conduct Science with a Particular Level of Reuse in Mind</h2>
-<p>The <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003542#s4">thrid rule</a> researchers sometimes create entirely new data formats that are only of particular use in certain contexts</p>
-<p>How do we deal with very large data? <span class="citation">(CERN 2009)</span></p>
+<p>Data that is well described and well documented and that follows good data format standards, is more likely to be interoperable with similar data. Such data is more useful than were it to follow these principles.</p>
+<p>A number of potential issues stand in the way of making data of this quality.</p>
+<ul>
+<li>Basic researcher familiarity with good data practice is low, and unfit tools are used<br />
+</li>
+<li>Keeping track of what the researcher did at the point of data capture can be complicated, requiring later reconstruction when tagging data<br />
+</li>
+<li>New scientific tools coming to market sometimes create proprietary data formats as output formats<br />
+</li>
+<li>researchers sometimes create custom data formats for their research (Figshare hosts over xxx distinct types of dataset)<br />
+</li>
+<li>Some data is hyper-hetrogeneous, bringing together multi-varied data across many dimensions, in such a way that only the researcher who created that data set understands how to unpick it</li>
+</ul>
+<p>Most of these issues have all been successfully addressed in specific domains or communities.</p>
+<p>Software Carpentry has reached over 120,000 students <span class="citation">(Wilson 2016)</span>. They conduct two day workshops instructing researcchers on the basics of how to work with software. They have created a sister organisation whose aim is to do the same, but on the basics of data management.</p>
+<p>Use field specific standards where they exist. Most core disciplines have well descibed data formats, and apprpriate data repositories, but even in areas that are close, a lack of hamonization of data standards can be an issue. Inistaives like the ISA TOOLs initative can help significantly with creating interoperable data standards in the life sciences.</p>
+<p>With microscopy new microscopes have frequencly created new data formats. To aid with instrument interoprability the microsopcy community created the <a href="http://www.openmicroscopy.org/site/products/omero">OMERO</a> framework, a set of standards and software tools, that supports interopoerablity across over 140 different image formats.</p>
+<p>For keeping track of what happens at the point of data collection, creating smart tooling is an important advance. Also digital lab notebooks have a place to play in this. Google have created a digital lab notebook for the mass market with <a href="https://makingscience.withgoogle.com/science-journal">Google Science Journal</a> and <a href="http://jupyter.org">Project Juypter</a> offers a digitiacl computation notebook that supports collaboartion, computaoition, versioinong and dissemination of scientific results.</p>
+<p>Another route for creating compatable data is to follow data standards bodies. The Open Annotation working group created a data format with a high degree of usaage for annotation in the digital humantiies, and ensured interoparability and openenss of that data format through an open sandardisation process that led the format becoming a W3C standard.</p>
 <h3 id="false-privacy-fears">False privacy fears</h3>
 <p>Privacy concerns are real, but often the conversation gets dominated by this concern, where most data is not affected by this conversation.</p>
 <h3 id="new-tools-create-new-data-formats">New tools create new data formats</h3>
 <p>Especially in microscopy (see OMERO as a solution to this)</p>
-<h2 id="rule-4.-publish-workflow-as-context">Rule 4. Publish Workflow as Context</h2>
 <h3 id="heterogeneous-data">Heterogeneous data</h3>
 <p>A research question may need to pull together data from very different sources, and perhaps only the researcher understands how to combine the data</p>
-<h1 id="challenge-infrastructure-for-openness-geoffrey2015">Challenge: Infrastructure for openness <span class="citation">(Geoffrey, Jennifer, and Cameron 2015)</span></h1>
-<pre><code>intent for data sharing must be matched by infrastructural support</code></pre>
-<h2 id="rule-2.-share-your-data-online-with-a-permanent-identifier">Rule 2. Share your data online with a Permanent identifier</h2>
+<h1 id="core-challenge-two-a-lack-of-infrastructure-for-openness">Core Challenge two: A lack of infrastructure for openness</h1>
+<p>This challenge is addressded by questions two, six, and eight:</p>
+<ul>
+<li>Rule 2. Share your data online with a Permanent identifier<br />
+</li>
+<li>Rule 6. Publish Your Code (Even the small bits)<br />
+</li>
+<li>Rule 8. Foster and use data repositories</li>
+</ul>
+<p><span class="citation">(Geoffrey, Jennifer, and Cameron 2015)</span></p>
+<ul>
+<li>Some data is too large to share easily<br />
+</li>
+<li>Some data is not publiclally availalbe</li>
+</ul>
+<p>How do we deal with very large data? <span class="citation">(CERN 2009)</span></p>
 <p>The data under the desk phenomenon is well known.</p>
 <ul>
 <li>Big data has a home, Astronomy, Particle Physics, Genomics<br />
@@ -79,32 +98,31 @@ in those practices. Good data management and husbandry becomes easier when we ha
 </ul>
 <h3 id="data-owned-by-corporations">Data owned by corporations</h3>
 <p>Large data at google and Facebook scale are owned by companies like google and Facebook. Work that builds on this data cannot be reproduced (this is an edge case). s</p>
-<h2 id="rule-6.-publish-your-code-even-the-small-bits">Rule 6. Publish Your Code (Even the small bits)</h2>
-<h2 id="rule-8.-foster-and-use-data-repositories">Rule 8. Foster and use data repositories</h2>
 <ul>
 <li>This also helps with data formats, as it requires standarsiation of your data</li>
 </ul>
 <h3 id="lack-of-infrastructure">Lack of infrastructure</h3>
 <p>needs to be dealt with on a subject by subject basis, also libraries may play a role in the future</p>
-<h1 id="challenge-the-incentives-for-openness">Challenge: The incentives for openness</h1>
-<pre><code>without credit there will be no shift in culture</code></pre>
-<h2 id="rule-5.-link-your-data-to-your-publications-as-often-as-possible">Rule 5. Link Your Data to Your Publications as Often as Possible</h2>
-<h2 id="rule-7.-state-how-you-want-to-get-credit">Rule 7. State How You Want to Get Credit</h2>
-<h2 id="rule-9.-reward-colleagues-who-share-their-data-properly">Rule 9. Reward Colleagues Who Share Their Data Properly</h2>
-<h3 id="lack-of-credit">Lack of credit</h3>
-<p>This is the biggest problem, researcher led grants, and personal impact statements can help</p>
-<h1 id="challenge-the-culture-of-openness">Challenge: The culture of Openness</h1>
-<pre><code>If we achieve a cultural shift within a field, this question does not even exist,
-the hardest, and most influential, changes are cultural ones</code></pre>
-<h3 id="rule-10.-be-a-booster-for-data-science">Rule 10. Be a Booster for Data Science</h3>
+<h1 id="core-challenge-three-creating-a-supporting-culture-for-openness">Core Challenge Three: Creating a supporting culture for openness</h1>
+<p>This is addressed by rules five, seven, nine and ten, and can be summarised by asking how we can ensure that the correct incentives are in place to support the sharing of open data.</p>
+<ul>
+<li>Rule 5. Link Your Data to Your Publications as Often as Possible<br />
+</li>
+<li>Rule 7. State How You Want to Get Credit<br />
+</li>
+<li>Rule 9. Reward Colleagues Who Share Their Data Properly<br />
+</li>
+<li>Rule 10. Be a Booster for Data Science</li>
+</ul>
 <h2 id="some-solutions">Some Solutions</h2>
 <ul>
 <li>encourage high profile journals to advocate for open data</li>
 <li>require data management plans</li>
-<li>celebrate those who share well, create social pressure for data sharing</li>
+<li>celebrate those who share well, create social pressure for data sharing<br />
+</li>
+<li>make data sharing mandatory PLOS March 2014.</li>
 </ul>
 <h1 id="summary-of-solutions">Summary of solutions</h1>
-<pre><code>to be completed </code></pre>
 <hr />
 <div id="refs" class="references">
 <div id="ref-RSOpen">
@@ -130,6 +148,9 @@ the hardest, and most influential, changes are cultural ones</code></pre>
 </div>
 <div id="ref-Wilkinson2016">
 <p>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for scientific data management and stewardship.” <em>Scientific Data</em> 3 (March). Nature Publishing Group: 160018. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.</p>
+</div>
+<div id="ref-wilson2016">
+<p>Wilson, Greg. 2016. “Software Carpentry: lessons learned.” <em>F1000Research</em> 3 (January). doi:<a href="https://doi.org/10.12688/f1000research.3-62.v2">10.12688/f1000research.3-62.v2</a>.</p>
 </div>
 </div>
 </body>
