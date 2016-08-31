@@ -14,7 +14,7 @@ Open Data is Findable, Accessible, Interoperable and Reusable [@Wilkinson2016]. 
 # How should we speak of the challenges for Open Data?
 [@Goodman2014] lay out ten rules for the care and feeding of scientific data. Were all of these rules to be adhered to by all researchers, we would have as good an Open Data ecosystem as we could wish for. Let us look at what might be preventing us from adopting the key practices from these rules! To streamline the discussion I have grouped the ten rules into three core challenges.
 
-# Core Challenge One: competence in working with data
+# Core Challenge One: Competence in Working with Data
 
 This challenge is addressed by rules one, three and four:
 
@@ -36,7 +36,10 @@ Most of these issues have all been successfully addressed in specific domains or
 
 Software Carpentry has reached over 120,000 students [@wilson2016]. They conduct two day workshops instructing researchers on the basics of how to work with software. They have created a sister organisation whose aim is to do the same, but on the basics of data management.
 
-Use field specific standards where they exist. Most core disciplines have well described data formats, and appropriate data repositories, but even in areas that are close, a lack of harmonisation of data standards can be an issue. Initiatives like the ISA TOOLs initiative can help significantly with creating interoperable data standards in the life sciences.
+Mention https://rinocloud.com/#demo in terms of how to autogenerate good data
+<!-- #TODO:finish this section  -->
+
+Use field specific standards where they exist. Most core disciplines have well described data formats, and appropriate data repositories, but even in areas that are close, a lack of harmonisation of data standards can be an issue. Initiatives like the ISA TOOLs [@Sansone2012] initiative can help significantly with creating interoperable data standards in the life sciences.
 
 With microscopy new microscopes have frequently created new data formats. To aid with instrument interoperability the microscopy community created the [OMERO](http://www.openmicroscopy.org/site/products/omero) framework, a set of standards and software tools, that supports interoperability across over 140 different image formats.
 
@@ -44,41 +47,44 @@ For keeping track of what happens at the point of data collection, creating smar
 
 Another route for creating compatible data is to follow data standards bodies. The Open Annotation working group created a data format with a high degree of usage in the digital humanities, and ensured interoperability and openness of that data format through an open standardisation process that led the format becoming a W3C standard.
 
-# Core Challenge two: A lack of infrastructure for openness
+# Core Challenge Two: Appropriate Infrastructure for Open Data
 
-This challenge is addressded by questions two, six, and eight:
+This challenge is addressed by rules two, six, and eight:
 
 - Rule 2. Share your data online with a Permanent identifier  
 - Rule 6. Publish Your Code (Even the small bits)  
 - Rule 8. Foster and use data repositories  
 
- [@Geoffrey2015]
+Data that is identifiable, has a stable home, and good curation is data that is findable and accessible. This requires the existence of appropriate infrastructure [@Geoffrey2015] for that data.
 
- - Some data is too large to share easily  
- - Some data is not publiclally availalbe
+Good infrastructure does exist for data in many domains of research (e.g. high energy physics, astronomy, genomics [@Benson2013, @Berman2000]), however there are emerging domains for whom data infrastructure is becoming a critical (e.g. high throughput and resolution microscopy, conectomics [@Lichtman2014], computational social science). These domains share a common pattern of tool sophistication and data generation having expanded at a rate that is much faster than had been anticipated leaving them in a momentary state of data crisis.
 
-How do we deal with very large data? [@CERN-DATA]
+It may be instructive to look at how high energy paticle physics deals with it's data storage requirments. CERN [@CERN-DATA] outlines four levels of data preservation
 
-The data under the desk phenomenon is well known.
+1. retain only the publication that the data ended up generating  
+2. preserve the data in a simplified format, this might be for outreach or training purposes
+3. preserve the analysis software and specification of the data format
+4. preserve the full reconstruction level data, and possibly some of the original data
 
-* Big data has a home, Astronomy, Particle Physics, Genomics  
-* Highly specific data has a home  
-* Hetrogenous "data under the desk" data have no natural home, but there are not options -- Figshare, Zenodo, DataDryad, Github
-	* Challenge here is in making researchers aware of the existence of these resources, and encouraging them to use them.
-* The greatest challenge is in large data with no natural home (large scale social science data), and data coming from fields whose technical capability is outstripping the level of experience of those fields for dealing with that data. Currently this is an acute problem in microscopy, and is becoming an increasing problem for conectomics [@Lichtman2014].
-* [Registry of Research Data Repositories](http://www.re3data.org) lists over 1500 research data repositories. The journal Scientific Data also maintains a more [curated list](http://www.nature.com/sdata/policies/repositories).
-* example subject specific repositories   
-* Scientific data repository list   
+It is understood that much of the primary data coming out of the detector will have to be discarded, and so their data preservation framework allows them to make decisions on what to keep based around the expected future uses of that kind of data.
 
-### Data owned by corporations
-Large data at google  and Facebook scale are owned by companies like google and Facebook. Work that builds on this data cannot be reproduced (this is an edge case).
-s
+It may be possible with emerging high resolution data sources to also find ways to make decisions around whether we can preserve certain artefacts that are of lower dimensionality of the original source data. For example in conectomics one begins with high resolution images of brain slices, and a full 3-D image of a brain can be on the order of petabytes of data, however the final network diagram showing the interconnection of the neuronal scaffolding of a brain will be many orders of magnitude smaller than the original images.
 
+<!--  For bological samples, hightrougput sequencing  -->
 
-* This also helps with data formats, as it requires standarsiation of your data
+Another issue to keep in mind about 70% of the lifetime cost is incurred on first write to disk, given the current rates at which the prices of long term data storage is dropping, so the question of which data sets do we need to make strategic decisions around will probably always be with us, but our view on the kind and size of what that data is will constantly be changing.  
 
-### Lack of infrastructure
-needs to be dealt with on a subject by subject basis, also libraries may play a role in the future
+In terms of numbers of data sets, most researchers producing data are not producing data at large scale. The questions around how they can create good identifiers for their data, and how they can find appropriate locations to deposit their data, are equally important as for those of large data.
+
+For subject specific data there usually exists a subject specific repository. The [Registry of Research Data Repositories](http://www.re3data.org) lists over 1500 research data repositories. The journal Scientific Data also maintains a more [curated list](http://www.nature.com/sdata/policies/repositories).
+
+For data that does not naturally find a home in one of these repositories there are also generic data repositories such as Figshare, Zenodo, DataDryad, Imeji and Github. Each of these will allow a researcher to post a public version of their data with an appropriate identifier. The main challenge here is in increasing awareness amongst researchers about the availability of tools like these.
+
+There has been a growing interest in using peer to peer like systems for building data sharing infrastructures. Though not aimed at creating public repositories, tools like [dat data](http://dat-data.com) and [noms](https://github.com/attic-labs/noms) have the potential to significantly improve how researchers share and collaborate on data sets with each other.
+
+There are two other infrastructure challenges that we might consider around data; privacy and ownership.
+
+For any 
 
 
 
