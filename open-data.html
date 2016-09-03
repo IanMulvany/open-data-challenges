@@ -42,34 +42,36 @@
 <p>Data that is well described and well documented and that follows good data format standards, is more likely to be interoperable with similar data. Such data is more useful than were it to follow these principles.</p>
 <p>A number of potential issues stand in the way of making data of this quality.</p>
 <ul>
-<li>Basic researcher familiarity with good data practice is low, and unfit tools are used<br />
+<li>Basic researcher familiarity with good data practice is low<br />
 </li>
 <li>Keeping track of what the researcher did at the point of data capture can be complicated, requiring later reconstruction when tagging data<br />
 </li>
 <li>New scientific tools coming to market sometimes create proprietary data formats as output formats<br />
 </li>
-<li>researchers sometimes create custom data formats for their research (Figshare hosts over 100 distinct mimetypes)</li>
-<li>Some data is hyper-hetrogeneous, bringing together multi-varied data across many dimensions, in such a way that only the researcher who created that data set understands how to unpick it</li>
+<li>researchers sometimes create custom data formats for their research (Figshare hosts over 100 distinct mimetypes)<br />
+</li>
+<li>Some data is heterogeneous, bringing together multi-varied data across many dimensions, in such a way that only the researcher who created that data set understands how to unpick it</li>
 </ul>
 <p>Most of these issues have all been successfully addressed in specific domains or communities.</p>
-<p>Software Carpentry has reached over 120,000 students <span class="citation">(Wilson 2016)</span>. They conduct two day workshops instructing researchers on the basics of how to work with software. They have created a sister organisation whose aim is to do the same, but on the basics of data management.</p>
-<p>Mention https://rinocloud.com/#demo in terms of how to autogenerate good data <!-- #TODO:finish this section  --></p>
-<p>Use field specific standards where they exist. Most core disciplines have well described data formats, and appropriate data repositories, but even in areas that are close, a lack of harmonisation of data standards can be an issue. Initiatives like the ISA TOOLs <span class="citation">(Sansone et al. 2012)</span> initiative can help significantly with creating interoperable data standards in the life sciences.</p>
+<p>In order to imporve reseracher skillls with working with code, Software Carpentry has reached over 120,000 students <span class="citation">(Wilson 2016)</span>. They conduct two day workshops instructing researchers on the basics of how to work with software. They have created a sister organisation whose aim is to do the same, but on the basics of data management - Data Carpentry. This is a ground-up effort that is being sustained by the good will of the communities within which these courses happen, and nicely demonstrates the appetite for improved skills amongst software and data intensive researchers.</p>
+<p>Many fields have specific standards for data description, and these should be used where they exist. Most core disciplines have appropriate data repositories, but even in areas that are close, a lack of harmonisation of data standards can be an issue. Initiatives like the ISA TOOLs <span class="citation">(Sansone et al. 2012)</span> initiative can help significantly with creating interoperable data standards in the life sciences, and this kind of data interoperability effort is a good example for other fields that are looking for similar interoperability.</p>
 <p>With microscopy new microscopes have frequently created new data formats. To aid with instrument interoperability the microscopy community created the <a href="http://www.openmicroscopy.org/site/products/omero">OMERO</a> framework, a set of standards and software tools, that supports interoperability across over 140 different image formats.</p>
-<p>For keeping track of what happens at the point of data collection, creating smart tooling is an important advance. Also digital lab notebooks have a place to play in this. Google have created a digital lab notebook for the mass market with <a href="https://makingscience.withgoogle.com/science-journal">Google Science Journal</a> and <a href="http://jupyter.org">Project Juypter</a> offers a digital notebook that supports collaboration, computation, versioning and dissemination of scientific results.</p>
-<p>Another route for creating compatible data is to follow data standards bodies. The Open Annotation working group created a data format with a high degree of usage in the digital humanities, and ensured interoperability and openness of that data format through an open standardisation process that led the format becoming a W3C standard.</p>
+<p>For keeping track of what happens at the point of data collection, creating smart tooling is an important advance. Also digital lab notebooks have a place to play in this. Google have created a digital lab notebook for the mass market with <a href="https://makingscience.withgoogle.com/science-journal">Google Science Journal</a> and <a href="http://jupyter.org">Project Juypter</a> offers a digital notebook that supports collaboration, computation, versioning and dissemination of scientific results. Tools can be configured to automatically annotate data at the point of data capture. <a href="https://rinocloud.com/">Rinocloud</a> offers a service that can act as a digital hub bringing together data from multiple machines, into an auto-updated lab notebook.</p>
+<p>Another route for creating compatible data is to make use of data standards bodies. The Open Annotation working group created a data format with a high degree of usage in the digital humanities, and ensured interoperability and openness of that data format through an open standardisation process that led the format becoming a World Wide Web Consortium standard.</p>
+<p>Good data management practices is supported by good training and good community practice. Finding ways to introduce this training early …</p>
 <h1 id="core-challenge-two-appropriate-infrastructure-for-open-data">Core Challenge Two: Appropriate Infrastructure for Open Data</h1>
 <p>This challenge is addressed by rules two, six, and eight:</p>
 <ul>
 <li>Rule 2. Share your data online with a Permanent identifier<br />
 </li>
+<li>Rule 5. Link Your Data to Your Publications as Often as Possible<br />
+</li>
 <li>Rule 6. Publish Your Code (Even the small bits)<br />
 </li>
 <li>Rule 8. Foster and use data repositories</li>
 </ul>
-<p>Data that is identifiable, has a stable home, and good curation is data that is findable and accessible. This requires the existence of appropriate infrastructure <span class="citation">(Geoffrey, Jennifer, and Cameron 2015)</span> for that data.</p>
-<p>Good infrastructure does exist for data in many domains of research (e.g. high energy physics, astronomy, genomics <span class="citation">(Benson et al. 2013, <span class="citation">Berman (2000)</span>)</span>), however there are emerging domains for whom data infrastructure is becoming a critical (e.g. high throughput and resolution microscopy, conectomics <span class="citation">(Lichtman, Pfister, and Shavit 2014)</span>, computational social science). These domains share a common pattern of tool sophistication and data generation having expanded at a rate that is much faster than had been anticipated leaving them in a momentary state of data crisis.</p>
-<p>It may be instructive to look at how high energy paticle physics deals with it’s data storage requirments. CERN <span class="citation">(CERN 2009)</span> outlines four levels of data preservation</p>
+<p>Data that has an identifier, a stable home, and is well curated is data is easily findable and accessible. This requires the existence of appropriate infrastructure <span class="citation">(Geoffrey, Jennifer, and Cameron 2015)</span> for that particular kind of data, be that technical infrastructure (for hosting and issuing of identifiers) or organisation and human infrastructure (for curation, annotation and preservation of the data).</p>
+<p>It may be instructive to look at how high energy particle physics deals with it’s data storage requirements. CERN <span class="citation">(CERN 2009)</span> outlines four levels of data preservation</p>
 <ol style="list-style-type: decimal">
 <li>retain only the publication that the data ended up generating<br />
 </li>
@@ -86,29 +88,37 @@
 <p>For data that does not naturally find a home in one of these repositories there are also generic data repositories such as Figshare, Zenodo, DataDryad, Imeji and Github. Each of these will allow a researcher to post a public version of their data with an appropriate identifier. The main challenge here is in increasing awareness amongst researchers about the availability of tools like these.</p>
 <p>There has been a growing interest in using peer to peer like systems for building data sharing infrastructures. Though not aimed at creating public repositories, tools like <a href="http://dat-data.com">dat data</a> and <a href="https://github.com/attic-labs/noms">noms</a> have the potential to significantly improve how researchers share and collaborate on data sets with each other.</p>
 <p>There are two other infrastructure challenges that we might consider around data; privacy and ownership.</p>
-<p>For any</p>
-<h1 id="core-challenge-three-creating-a-supporting-culture-for-openness">Core Challenge Three: Creating a supporting culture for openness</h1>
+<p>For any …</p>
+<p>Good infrastructure does exist for data in many domains of research (e.g. high energy physics, astronomy, genomics <span class="citation">(Benson et al. 2013, <span class="citation">Berman (2000)</span>)</span>), however there are emerging domains for whom lack of good infrastructure is becoming a critical problem (e.g. high throughput and resolution microscopy, conectomics <span class="citation">(Lichtman, Pfister, and Shavit 2014)</span>, computational social science). These domains share a common pattern where the tools used have reached new levels of sophistication and as a result data generation from these tools has expanded at a rate that is much faster than had been anticipated within their fields, leaving these fields in a momentary state of data crisis. A solution to these kinds of crises is to encourage the funding of data infrastructure, however whether this should be done on a project level, institution level, national level, or even international level remains an open and unresolved question. Building on many reports on the challenges of data infrastructure <span class="citation">(Knowledge Exchange 2016)</span> recommendations include taking into account the full research cycle when thinking about funding infrastructures, and to look to the US where the NSF has a dedicated program for the creation of shared <a href="http://www.nsf.gov/cise/aci/cif21/CIF21Vision2012current.pdf">data-centric cyber infrastructure</a>.</p>
+<p>One last critical piece of infrastructure that is required for a healthy Open Data ecosystem is the ability to give credit to data. Within scholarly publishing this is done through enabling data citation. Over 2012 to 2015 a FORCE15 working group created the data citation principles (<span class="citation">(Altman et al. 2015)</span>). All stakeholders in the scholarly enterprise should treat data as a first class citizen, and cite it appropriately. The standard XML used in scholarly publishing has also been updated to support data citation (<span class="citation">(Mietchen et al. 2015)</span>). Journals need to encourage good data citation practice, and need to ensure that data is acknowledged correctly. For example the open access journal <a href="https://elifesciences.org">eLife</a> requires author list any novel data that they create in the course of writing their paper, along with giving credit to any previously published data that they used as part of their investigation.</p>
+<h1 id="core-challenge-three-creating-a-supporting-culture-for-openness">Core Challenge Three: Creating a Supporting Culture for Openness</h1>
 <p>This is addressed by rules five, seven, nine and ten, and can be summarised by asking how we can ensure that the correct incentives are in place to support the sharing of open data.</p>
 <ul>
-<li>Rule 5. Link Your Data to Your Publications as Often as Possible<br />
-</li>
 <li>Rule 7. State How You Want to Get Credit<br />
 </li>
 <li>Rule 9. Reward Colleagues Who Share Their Data Properly<br />
 </li>
 <li>Rule 10. Be a Booster for Data Science</li>
 </ul>
-<h2 id="some-solutions">Some Solutions</h2>
+<p>Irrespective of how good data management skills are, or how sophisticated data hosting infrastructure is, unless there is a willingness on the part of the researcher to make their data open, then no data sharing will happen.</p>
+<p>For the researcher they have to put time into making their data available, and they need to feel sure that this time would not be better used in helping their careers were they doing something else with that time, such as creating grant proposals, or working on new experiments. In some cases researchers may even have a misguided fear of sharing data in the belief that by do doing they will loose out on publishing potential results that they may have otherwise been able to obtain from the data set <span class="citation">(Sharing 2016)</span>.</p>
+<p>To overcome these fears researchers motivations to share data need to outweigh their misgivings towards data sharing.</p>
+<p>There are two strategies that can be taken towards this. The first is to make data sharing mandatory in order to receive grants or to achieve publication. In so doing the researcher’s search for the reward that they believe will benefit their career will require them to share their data, and we obtain an open data ecosystem by default.</p>
+<p>The second approach is to fairly reward data and software producers for their efforts on their own merits. This is more desirable, but significantly harder to do.</p>
 <ul>
-<li>encourage high profile journals to advocate for open data</li>
 <li>require data management plans</li>
 <li>celebrate those who share well, create social pressure for data sharing<br />
 </li>
-<li>make data sharing mandatory PLOS March 2014.</li>
+<li>make data sharing mandatory, e.g. PLOS March 2014, Wellcome, Gates, Structural Biology.</li>
+<li>Change modes of assessment</li>
+<li>DORA</li>
 </ul>
 <h1 id="summary-of-solutions">Summary of solutions</h1>
 <hr />
 <div id="refs" class="references">
+<div id="ref-Altman2015">
+<p>Altman, Micah, Christine Borgman, Mercè Crosas, and Maryann Matone. 2015. “An introduction to the joint principles for data citation.” <em>Bulletin of the American Society for Information Science and Technology</em> 41 (3): 43–45. doi:<a href="https://doi.org/10.1002/bult.2015.1720410313">10.1002/bult.2015.1720410313</a>.</p>
+</div>
 <div id="ref-Benson2013">
 <p>Benson, D. A., M. Cavanaugh, K. Clark, I. Karsch-Mizrachi, D. J. Lipman, J. Ostell, and E. W. Sayers. 2013. “GenBank.” <em>Nucleic Acids Research</em> 41 (D1): D36–D42. doi:<a href="https://doi.org/10.1093/nar/gks1195">10.1093/nar/gks1195</a>.</p>
 </div>
@@ -127,8 +137,14 @@
 <div id="ref-Goodman2014">
 <p>Goodman, Alyssa, Alberto Pepe, Alexander W. Blocker, Christine L. Borgman, Kyle Cranmer, Merce Crosas, Rosanne Di Stefano, et al. 2014. “Ten Simple Rules for the Care and Feeding of Scientific Data.” Edited by Philip E. Bourne. <em>PLoS Computational Biology</em> 10 (4). Public Library of Science: e1003542. doi:<a href="https://doi.org/10.1371/journal.pcbi.1003542">10.1371/journal.pcbi.1003542</a>.</p>
 </div>
+<div id="ref-KnowledgeExchange2016">
+<p>Knowledge Exchange. 2016. “Funding research data management and related infrastructures,” no. May. <a href="http://repository.jisc.ac.uk/6402/1/Funding{\_}RDM{\_}{\&amp;}{\_}Related{\_}Infratsructures{\_}MAY2016{\_}v7.pdf" class="uri">http://repository.jisc.ac.uk/6402/1/Funding{\_}RDM{\_}{\&amp;}{\_}Related{\_}Infratsructures{\_}MAY2016{\_}v7.pdf</a>.</p>
+</div>
 <div id="ref-Lichtman2014">
 <p>Lichtman, Jeff W, Hanspeter Pfister, and Nir Shavit. 2014. “The big data challenges of connectomics.” <em>Nature Neuroscience</em> 17 (11). NIH Public Access: 1448–54. doi:<a href="https://doi.org/10.1038/nn.3837">10.1038/nn.3837</a>.</p>
+</div>
+<div id="ref-mietchen2015">
+<p>Mietchen, Daniel, Johanna McEntyre, Jeff Beck, Chris Maloney, and Force11 Data Citation Implementation Group. 2015. “Adapting JATS to support data citation.” National Center for Biotechnology Information (US).</p>
 </div>
 <div id="ref-Moedas2015">
 <p>Moedas, Carlos. 2015. <em>Open Innovation, Open Science, Open to the World</em>. doi:<a href="https://doi.org/10.2777/061652">10.2777/061652</a>.</p>
@@ -138,6 +154,9 @@
 </div>
 <div id="ref-Sansone2012">
 <p>Sansone, Susanna-Assunta, Philippe Rocca-Serra, Dawn Field, Eamonn Maguire, Chris Taylor, Oliver Hofmann, Hong Fang, et al. 2012. “Toward interoperable bioscience data.” <em>Nature Genetics</em> 44 (2): 121–26. doi:<a href="https://doi.org/10.1038/ng.1054">10.1038/ng.1054</a>.</p>
+</div>
+<div id="ref-Sharing2016">
+<p>Sharing, The International Consortium of Investigators for Fairness in Trial Data. 2016. “Toward Fairness in Data Sharing.” <em>New England Journal of Medicine</em> 375 (5). Massachusetts Medical Society: 405–7. doi:<a href="https://doi.org/10.1056/NEJMp1605654">10.1056/NEJMp1605654</a>.</p>
 </div>
 <div id="ref-Wilkinson2016">
 <p>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for scientific data management and stewardship.” <em>Scientific Data</em> 3 (March). Nature Publishing Group: 160018. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.</p>
