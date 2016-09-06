@@ -4,7 +4,7 @@ author:
 - name: Ian Mulvany
   affiliation: eLife Sciences, Sage
   email: ian@mulvany.net
-date: January 2014
+date: September 2016
 abstract: Calls in favour of Open Data in research are becoming overwhelming. They are at national [@RCKUOpen] and international levels [@Moedas2015, @RSOpen, @ams2016]. I will set out a working definition of Open Data and will discuss the key challenges preventing the publication of Open Data becoming standard practice. I will attempt to draw some general solutions to those challenges from field specific examples.
 ---
 
@@ -142,6 +142,6 @@ Making data or software specific positions available within the academy can also
 
 # Further reading
 
-More relevant references for this topic can be found at the [Open Data Challenges](https://www.mendeley.com/groups/9199581/open-data-challenges/papers/) group on Mendeley. The bibliography and source files for this short paper can be found on the [Open Data Challenges](https://github.com/IanMulvany/open-data-challenges/tree/gh-pages) repository on github. 
+More relevant references for this topic can be found at the [Open Data Challenges](https://www.mendeley.com/groups/9199581/open-data-challenges/papers/) group on Mendeley. The bibliography and source files for this short paper can be found on the [Open Data Challenges](https://github.com/IanMulvany/open-data-challenges/tree/gh-pages) repository on github.
 
 ---
