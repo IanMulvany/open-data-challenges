@@ -142,6 +142,6 @@ Making data or software specific positions available within the academy can also
 
 # Further reading
 
-More relevant references for this topic can be found at the [Open Data Challenges](https://www.mendeley.com/groups/9199581/open-data-challenges/papers/) group on Mendeley.
+More relevant references for this topic can be found at the [Open Data Challenges](https://www.mendeley.com/groups/9199581/open-data-challenges/papers/) group on Mendeley. The bibliography and source files for this short paper can be found on the [Open Data Challenges](https://github.com/IanMulvany/open-data-challenges/tree/gh-pages) repository on github. 
 
 ---
